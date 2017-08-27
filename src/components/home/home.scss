@@ -1,3 +1,36 @@
-.content h1 {
-    text-align: center;
+.icon {
+  text-align: center;
+}
+
+.icon>img {
+  border-radius: 100%;
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+}
+
+@media (max-width: 765px) {
+  .icon>img {
+    width: 40%;
+    margin: 20px 0;
+  }
+}
+
+.deresute {
+  height: 100px;
+}
+
+.deresute>img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.bs-docs-section {
+  padding-bottom: 10px;
+}
+
+.page-header {
+    padding-bottom: 11px;
+    margin: 48px 0 24px;
+    border-bottom: 1px solid #eee;
 }
