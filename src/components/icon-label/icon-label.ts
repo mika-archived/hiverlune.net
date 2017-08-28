@@ -1,21 +1,21 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 
-class LabeledIconParrams {
+class IconLabelParrams {
   icon: string;
   label: string;
   __raw: string;
 }
 
 @Component({
-  template: require('./labeled-icon.html'),
+  template: require('./icon-label.html'),
   props: {
     params: {}
   }
 })
-export class LabeledIconComponent extends Vue {
+export class IconLabelComponent extends Vue {
   // props
-  public params: LabeledIconParrams;
+  public params: IconLabelParrams;
 
   // data
   public label: string = this.params.label || '';
