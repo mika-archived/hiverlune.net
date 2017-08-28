@@ -18,6 +18,36 @@
               "text-align": "center"
             }
           }
+        ],
+        "right": [
+          {
+            "component": "labeled-icon",
+            "params": {
+              "icon": "user",
+              "label": "Mikazuki Fuyuno / みか"
+            }
+          },
+          {
+            "component": "labeled-icon",
+            "params": {
+              "icon": "home",
+              "label": "Kobe-shi Chuo-ku, Hyogo"
+            }
+          },
+          {
+            "component": "labeled-icon",
+            "params": {
+              "icon": "ban",
+              "label": "Not a programmer"
+            }
+          },
+          {
+            "component": "labeled-icon",
+            "params": {
+              "icon": "envelope-o",
+              "__raw": "<code>'mika~kokoiroworks.com'.gsub('~', '@')</code>"
+            }
+          }
         ]
       }
     },

@@ -5,6 +5,7 @@ import './sass/main.scss';
 
 import { CollectionComponent } from './components/collection';
 import { HomeComponent } from './components/home';
+import { LabeledIconComponent } from './components/labeled-icon';
 import { MediaObjectComponent } from './components/media-object';
 import { RoundedImageComponent } from './components/rounded-image';
 
@@ -13,6 +14,7 @@ Vue.use(VueRouter);
 
 // register components
 Vue.component('collection', CollectionComponent);
+Vue.component('labeled-icon', LabeledIconComponent);
 Vue.component('media-object', MediaObjectComponent);
 Vue.component('rounded-image', RoundedImageComponent);
 

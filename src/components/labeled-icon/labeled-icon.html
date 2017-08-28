@@ -1,0 +1,9 @@
+<p>
+  <i :class="icon" aria-hidden="true"></i>
+  <template v-if="hasLabel">
+    {{label}}
+  </template>
+  <template v-else>
+    <span v-html="raw" />
+  </template>
+</p>
