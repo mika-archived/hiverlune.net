@@ -1,0 +1,40 @@
+{
+  "sections": [
+    {
+      "title": "About me",
+      "layout": "media-object",
+      "params": {
+        "left": 4,
+        "right": 8
+      },
+      "contents": {
+        "left": [
+          {
+            "component": "rounded-image",
+            "params": {
+              "src": "https://www.gravatar.com/avatar/8f7571eb815b4c6b2ef883b1c8ed97dd?s=256"
+            },
+            "style": {
+              "text-align": "center"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "title": "Favorites",
+      "layout": "",
+      "contents": {}
+    },
+    {
+      "title": "Games",
+      "layout": "",
+      "contents": {}
+    },
+    {
+      "title": "Links",
+      "layout": "",
+      "contents": {}
+    }
+  ]
+}

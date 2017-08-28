@@ -1,0 +1,5 @@
+<div>
+  <div v-for="w in contents">
+    <div :is="w.component" :content="w.contents" :params="w.params" :style="stylify(w.style)" />
+  </div>
+</div>
