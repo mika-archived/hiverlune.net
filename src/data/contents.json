@@ -38,7 +38,8 @@
             "component": "icon-label",
             "params": {
               "icon": "ban",
-              "label": "Not a programmer"
+              "extra": "text-danger",
+              "label": "Programming, Gender"
             }
           },
           {
