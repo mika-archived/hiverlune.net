@@ -53,28 +53,6 @@
       }
     },
     {
-      "title": "Favorites",
-      "layout": "multi-column",
-      "params": {
-        "base": "lg",
-        "md": 12,
-        "lg": 6
-      },
-      "contents": [
-        [
-          {
-            "component": "p",
-            "params": {}
-          }
-        ]
-      ]
-    },
-    {
-      "title": "Games",
-      "layout": "",
-      "contents": {}
-    },
-    {
       "title": "Links",
       "layout": "multi-column",
       "params": {

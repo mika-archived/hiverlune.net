@@ -27,7 +27,8 @@ export class HomeComponent extends Vue {
     if (process.env.ENV === 'development') {
       this.sections = require('../../data/contents.json').sections;
     } else {
-      // TODO
+      const response = await this.axios.get('https://raw.githubusercontent.com/mika-f/hiverlune.net/master/src/data/contents.json');
+      this.sections = response.data.sections;
     }
   }
 }
