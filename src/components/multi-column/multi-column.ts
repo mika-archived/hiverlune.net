@@ -33,19 +33,19 @@ export class MultiColumnComponent extends Panel<{}> {
 
   get col(): string {
     let line = [];
-    if (this.params.xs !== null) {
+    if (this.isValid(this.params.xs)) {
       line.push(`col-${this.params.xs}`);
     }
-    if (this.params.sm !== null) {
+    if (this.isValid(this.params.sm)) {
       line.push(`col-sm-${this.params.sm}`);
     }
-    if (this.params.md !== null) {
+    if (this.isValid(this.params.md)) {
       line.push(`col-md-${this.params.md}`);
     }
-    if (this.params.lg !== null) {
+    if (this.isValid(this.params.lg)) {
       line.push(`col-lg-${this.params.lg}`);
     }
-    if (this.params.xl !== null) {
+    if (this.isValid(this.params.xl)) {
       line.push(`col-xl-${this.params.xl}`);
     }
     return line.join(' ');
@@ -53,5 +53,9 @@ export class MultiColumnComponent extends Panel<{}> {
 
   public getContents(index: number): object {
     return this.contents[index - 1];
+  }
+
+  private isValid(obj: any): boolean {
+    return obj !== undefined && typeof obj === 'number';
   }
 }
