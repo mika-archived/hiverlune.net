@@ -10,11 +10,14 @@ import Home from './components/home.vue';
 
 Vue.use(VueRouter);
 
-const vue = new Vue({
-  el: '#root',
-  router: new VueRouter({
-    routes: [
-      { path: '/', component: Home }
-    ]
-  })
+const router = new VueRouter({
+  routes: [
+    { path: '/', component: Home }
+  ]
 });
+
+const vue = new Vue({
+  render: (w) => w(Home),
+  router,
+});
+vue.$mount('#root');

@@ -40,6 +40,7 @@ export default class Home extends Vue {
   }
 
   mounted() {
+    console.log('mounted');
     this.$nextTick(async () => {
       await this.load();
     });

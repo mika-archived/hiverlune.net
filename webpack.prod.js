@@ -45,9 +45,10 @@ webpackConfug.plugins = [
     filename: 'css/[name].[contenthash].css',
   }),
   new PurifyCssPlugin({
-    paths: glob.sync(path.join(__dirname, 'src/**/*.html')),
+    moduleExtensions: ['.vue'],
+    paths: glob.sync(path.join(__dirname, 'src/**/*.{html|vue}')),
     purifyOptions: {
-      minify: true
+      minify: true,
     }
   }),
   new HtmlWebpackPlugin({
