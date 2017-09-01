@@ -1,0 +1,127 @@
+[
+  {
+    "component": "group",
+    "@title": "About me",
+    "children": [
+      {
+        "component": "grid",
+        "@base": "sm",
+        "@sm": [
+          4,
+          8
+        ],
+        "children": [
+          {
+            "component": "content",
+            "children": [
+              {
+                "component": "rounded-image",
+                "@src": "https://www.gravatar.com/avatar/8f7571eb815b4c6b2ef883b1c8ed97dd?s=256",
+                "style": {
+                  "text-align": "center"
+                }
+              }
+            ]
+          },
+          {
+            "component": "content",
+            "children": [
+              {
+                "component": "icon-label",
+                "@icon": "user",
+                "@label": "Mikazuki Fuyuno / みか"
+              },
+              {
+                "component": "icon-label",
+                "@icon": "home",
+                "@label": "Kobe-shi Chuo-ku, Hyogo"
+              },
+              {
+                "component": "icon-label",
+                "@icon": "ban",
+                "@extra": "text-danger",
+                "@label": "Programming / Gender"
+              },
+              {
+                "component": "icon-label",
+                "@icon": "envelope-o",
+                "@_raw": "<code>'mika~kokoiroworks.com'.gsub('~', '@')</code>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "group",
+    "@title": "Links",
+    "children": [
+      {
+        "component": "grid",
+        "@base": "lg",
+        "@xs": 12,
+        "@md": 6,
+        "@lg": 4,
+        "children": [
+          {
+            "component": "linked-icon-label",
+            "@icon": "twitter",
+            "@label": "Twitter",
+            "@link": {
+              "href": "https://twitter.com/MikazukiFuyuno",
+              "text": "@MikazukiFuyuno"
+            }
+          },
+          {
+            "component": "linked-icon-label",
+            "@icon": "book",
+            "@label": "amakan",
+            "@link": {
+              "href": "https://amakan.net/@mikazuki",
+              "text": "@mikazuki"
+            }
+          },
+          {
+            "component": "linked-icon-label",
+            "@icon": "pencil",
+            "@label": "はてなブログ",
+            "@link": {
+              "href": "http://mikazuki.hatenablog.jp",
+              "text": "みかづきメモ"
+            }
+          },
+          {
+            "component": "linked-icon-label",
+            "@icon": "bolt",
+            "@label": "イカクロ",
+            "@link": {
+              "href": "http://ikaclo.jp/users/1516/",
+              "text": "みか"
+            }
+          },
+          {
+            "component": "linked-icon-label",
+            "params": {
+              "icon": "tv",
+              "label": "Annict",
+              "link": {
+                "href": "https://annict.jp/@Mikazuki",
+                "text": "@Mikazuki"
+              }
+            }
+          },
+          {
+            "component": "linked-icon-label",
+            "@icon": "plug",
+            "@label": "Mastodon",
+            "@link": {
+              "href": "https://mastodon.cloud/@mikazuki",
+              "text": "@mikazuki"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
