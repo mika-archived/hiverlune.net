@@ -45,7 +45,7 @@
               {
                 "component": "icon-label",
                 "@icon": "envelope-o",
-                "@_raw": "<code>'mika~kokoiroworks.com'.gsub('~', '@')</code>"
+                "@raw": "<code>'mika~kokoiroworks.com'.gsub('~', '@')</code>"
               }
             ]
           }

@@ -10,12 +10,14 @@ import Contents from './components/Contents.vue';
 import Grid from './components/Grid.vue';
 import Group from './components/Group.vue';
 import Home from './components/Home.vue';
+import IconLabel from './components/IconLabel.vue';
 import RoundedImage from './components/RoundedImage.vue';
 
 Vue.use(VueRouter);
 Vue.component('contents', Contents);
 Vue.component('grid', Grid);
 Vue.component('group', Group);
+Vue.component('icon-label', IconLabel);
 Vue.component('rounded-image', RoundedImage);
 
 const router = new VueRouter({
