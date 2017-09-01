@@ -1,6 +1,7 @@
 <template>
   <div class="row">
     <div :key="index" :class="col(index)" v-for="index in size">
+      <div :is="colComponent(index)" :params="colParams(index)" />
     </div>
   </div>
 </template>
@@ -47,7 +48,6 @@ export default class Grid extends Vue {
   }
 
   public col(index: number): string {
-    console.log(index);
     let clazz = [];
     if (this.isValid(this.xs, index)) {
       clazz.push(`col-${this.getValue(this.xs, index)}`);
@@ -65,6 +65,14 @@ export default class Grid extends Vue {
       clazz.push(`col-xl-${this.getValue(this.xl, index)}`);
     }
     return clazz.join(' ');
+  }
+
+  public colComponent(index: number): any {
+    return this.colParams(index).component;
+  }
+
+  public colParams(index: number): any {
+    return this.children[index - 1];
   }
 
   private isValid(obj: any, index: number): boolean {

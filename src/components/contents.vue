@@ -1,8 +1,15 @@
 <template>
   <div>
-    <div :key="index" v-for="(w, index) in children">
-      <div :is="w.component" :params="w" :style="w.style" />
-    </div>
+    <template v-if="children">
+      <div :key="index" v-for="(w, index) in children">
+        <div :is="w.component" :params="w" :style="w.style" />
+      </div>
+    </template>
+    <template v-else>
+      <div :key="index" v-for="(w, index) in params.children">
+        <div :is="w.component" :params="w" :style="w.style" />
+      </div>
+    </template>
   </div>
 </template>
 
@@ -14,14 +21,12 @@ import { propertyMapping } from '../utils';
 
 @Component({
   props: {
-    children: {}
+    children: {},
+    params: {}
   }
 })
 export default class Contents extends Vue {
   public children: {};
-
-  constructor() {
-    super();
-  }
+  public params: any;
 }
 </script>

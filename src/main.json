@@ -12,7 +12,7 @@
         ],
         "children": [
           {
-            "component": "content",
+            "component": "contents",
             "children": [
               {
                 "component": "rounded-image",
@@ -24,7 +24,7 @@
             ]
           },
           {
-            "component": "content",
+            "component": "contents",
             "children": [
               {
                 "component": "icon-label",
@@ -65,60 +65,75 @@
         "@lg": 4,
         "children": [
           {
-            "component": "linked-icon-label",
-            "@icon": "twitter",
-            "@label": "Twitter",
-            "@link": {
-              "href": "https://twitter.com/MikazukiFuyuno",
-              "text": "@MikazukiFuyuno"
-            }
-          },
-          {
-            "component": "linked-icon-label",
-            "@icon": "book",
-            "@label": "amakan",
-            "@link": {
-              "href": "https://amakan.net/@mikazuki",
-              "text": "@mikazuki"
-            }
-          },
-          {
-            "component": "linked-icon-label",
-            "@icon": "pencil",
-            "@label": "はてなブログ",
-            "@link": {
-              "href": "http://mikazuki.hatenablog.jp",
-              "text": "みかづきメモ"
-            }
-          },
-          {
-            "component": "linked-icon-label",
-            "@icon": "bolt",
-            "@label": "イカクロ",
-            "@link": {
-              "href": "http://ikaclo.jp/users/1516/",
-              "text": "みか"
-            }
-          },
-          {
-            "component": "linked-icon-label",
-            "params": {
-              "icon": "tv",
-              "label": "Annict",
-              "link": {
-                "href": "https://annict.jp/@Mikazuki",
-                "text": "@Mikazuki"
+            "component": "contents",
+            "children": [
+              {
+                "component": "linked-icon-label",
+                "@icon": "twitter",
+                "@label": "Twitter",
+                "@link": {
+                  "href": "https://twitter.com/MikazukiFuyuno",
+                  "text": "@MikazukiFuyuno"
+                }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "book",
+                "@label": "amakan",
+                "@link": {
+                  "href": "https://amakan.net/@mikazuki",
+                  "text": "@mikazuki"
+                }
               }
-            }
+            ]
           },
           {
-            "component": "linked-icon-label",
-            "@icon": "plug",
-            "@label": "Mastodon",
-            "@link": {
-              "href": "https://mastodon.cloud/@mikazuki",
-              "text": "@mikazuki"
-            }
+            "component": "contents",
+            "children": [
+              {
+                "component": "linked-icon-label",
+                "@icon": "pencil",
+                "@label": "はてなブログ",
+                "@link": {
+                  "href": "http://mikazuki.hatenablog.jp",
+                  "text": "みかづきメモ"
+                }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "bolt",
+                "@label": "イカクロ",
+                "@link": {
+                  "href": "http://ikaclo.jp/users/1516/",
+                  "text": "みか"
+                }
+              }
+            ]
+          },
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "linked-icon-label",
+                "params": {
+                  "icon": "tv",
+                  "label": "Annict",
+                  "link": {
+                    "href": "https://annict.jp/@Mikazuki",
+                    "text": "@Mikazuki"
+                  }
+                }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "plug",
+                "@label": "Mastodon",
+                "@link": {
+                  "href": "https://mastodon.cloud/@mikazuki",
+                  "text": "@mikazuki"
+                }
+              }
+            ]
           }
         ]
       }
