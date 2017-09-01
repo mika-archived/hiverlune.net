@@ -115,13 +115,11 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "params": {
-                  "icon": "tv",
-                  "label": "Annict",
-                  "link": {
-                    "href": "https://annict.jp/@Mikazuki",
-                    "text": "@Mikazuki"
-                  }
+                "@icon": "tv",
+                "@label": "Annict",
+                "@link": {
+                  "href": "https://annict.jp/@Mikazuki",
+                  "text": "@Mikazuki"
                 }
               },
               {

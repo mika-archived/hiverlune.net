@@ -11,6 +11,7 @@ import Grid from './components/Grid.vue';
 import Group from './components/Group.vue';
 import Home from './components/Home.vue';
 import IconLabel from './components/IconLabel.vue';
+import LinkedIconLabel from './components/LinkedIconLabel.vue';
 import RoundedImage from './components/RoundedImage.vue';
 
 Vue.use(VueRouter);
@@ -18,6 +19,7 @@ Vue.component('contents', Contents);
 Vue.component('grid', Grid);
 Vue.component('group', Group);
 Vue.component('icon-label', IconLabel);
+Vue.component('linked-icon-label', LinkedIconLabel);
 Vue.component('rounded-image', RoundedImage);
 
 const router = new VueRouter({

@@ -15,6 +15,7 @@
     <template v-else>
       <span v-html="raw" />
     </template>
+    <a :href="link.href" target="_blank">{{link.text}}</a>
   </p>
 </template>
 
@@ -35,7 +36,7 @@ import { propertyMapping } from '../utils';
     params: {}
   }
 })
-export default class IconLabel extends Vue {
+export default class LinkedIconLabel extends Vue {
   public params: any;
 
   // data
@@ -43,6 +44,7 @@ export default class IconLabel extends Vue {
   public label: string = '';
   public _raw: string = '';
   public extra: string = '';
+  public link: {} = {};
 
   constructor() {
     super();
