@@ -9,6 +9,7 @@ img {
   border-radius: 100%;
   width: 80%;
   max-width: 200px;
+  margin: 15px 0;
   height: auto;
 }
 </style>

@@ -32,25 +32,26 @@ webpackConfug.module.rules.push(
   },
   {
     test: /\.(jpg|png|gif)$/,
-    loader: 'file-loader?name=assets/img/[name].[ext]'
+    loader: 'file-loader?name=/assets/img/[name].[ext]'
   },
   {
     test: /\.(svg|eot|ttf|woff|woff2)$/,
-    loader: 'file-loader?name=fonts/[name].[ext]'
+    loader: 'file-loader?name=/fonts/[name].[ext]'
   }
 );
 
 webpackConfug.plugins = [
   new ExtractTextPlugin({
     filename: 'css/[name].[contenthash].css',
+    publicPath: '/'
   }),
-  new PurifyCssPlugin({
-    moduleExtensions: ['.vue'],
-    paths: glob.sync(path.join(__dirname, 'src/**/*.{html|vue}')),
-    purifyOptions: {
-      minify: true,
-    }
-  }),
+  // new PurifyCssPlugin({
+  //   moduleExtensions: ['.vue'],
+  //   paths: glob.sync(path.join(__dirname, 'src/**/*.{html|vue}')),
+  //   purifyOptions: {
+  //     minify: true,
+  //   }
+  // }),
   new HtmlWebpackPlugin({
     inject: true,
     template: path.join(__dirname, 'src', 'index.html'),

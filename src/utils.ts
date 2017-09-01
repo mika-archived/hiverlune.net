@@ -1,6 +1,7 @@
 const WHITELIST: string[] = [
   'children',
   'component',
+  'class'
 ];
 
 // tslint:disable-next-line:no-any
