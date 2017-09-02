@@ -1,7 +1,7 @@
 [
   {
     "component": "group",
-    "@title": "About me",
+    "@title": "私について",
     "children": [
       {
         "component": "grid",
@@ -53,7 +53,88 @@
   },
   {
     "component": "group",
-    "@title": "Links",
+    "@title": "好きなもの",
+    "children": [
+      {
+        "component": "grid",
+        "@base": "md",
+        "@sm": 12,
+        "@md": 6,
+        "children": [
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "h-label",
+                "@text": "アニメ"
+              },
+              {
+                "component": "list",
+                "children": [
+                  {
+                    "component": "hyperlink",
+                    "@text": "ALDNOAH.ZERO",
+                    "@href": "http://www.aldnoahzero.com/"
+                  },
+                  {
+                    "component": "hyperlink",
+                    "@text": "Angel Beats!",
+                    "@href": "http://www.angelbeats.jp/"
+                  },
+                  {
+                    "component": "hyperlink",
+                    "@text": "アイドルマスターシンデレラガールズ",
+                    "@href": "http://imas-cinderella.com/"
+                  },
+                  {
+                    "component": "hyperlink",
+                    "@text": "ソードアート・オンライン",
+                    "@href": "http://www.swordart-online.net/"
+                  },
+                  {
+                    "component": "hyperlink",
+                    "@text": "〈物語〉シリーズ",
+                    "@href": "http://www.monogatari-series.com/"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "h-label",
+                "@text": "ゲーム"
+              },
+              {
+                "component": "list",
+                "children": [
+                  {
+                    "component": "hyperlink",
+                    "@text": "NieR:Automata",
+                    "@href": "http://www.jp.square-enix.com/nierautomata/"
+                  },
+                  {
+                    "component": "hyperlink",
+                    "@text": "Splatoon 2",
+                    "@href": "https://www.nintendo.co.jp/switch/aab6a/index.html"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "アトリエ 「不思議」シリーズ"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "group",
+    "@title": "リンク",
     "children": [
       {
         "component": "grid",
@@ -70,8 +151,8 @@
                 "@icon": "twitter",
                 "@label": "Twitter",
                 "@link": {
-                  "href": "https://twitter.com/MikazukiFuyuno",
-                  "text": "@MikazukiFuyuno"
+                  "@href": "https://twitter.com/MikazukiFuyuno",
+                  "@text": "@MikazukiFuyuno"
                 }
               },
               {
@@ -79,8 +160,8 @@
                 "@icon": "book",
                 "@label": "amakan",
                 "@link": {
-                  "href": "https://amakan.net/@mikazuki",
-                  "text": "@mikazuki"
+                  "@href": "https://amakan.net/@mikazuki",
+                  "@text": "@mikazuki"
                 }
               }
             ]
@@ -93,8 +174,8 @@
                 "@icon": "pencil",
                 "@label": "はてなブログ",
                 "@link": {
-                  "href": "http://mikazuki.hatenablog.jp",
-                  "text": "みかづきメモ"
+                  "@href": "http://mikazuki.hatenablog.jp",
+                  "@text": "みかづきメモ"
                 }
               },
               {
@@ -102,8 +183,8 @@
                 "@icon": "bolt",
                 "@label": "イカクロ",
                 "@link": {
-                  "href": "http://ikaclo.jp/users/1516/",
-                  "text": "みか"
+                  "@href": "http://ikaclo.jp/users/1516/",
+                  "@text": "みか"
                 }
               }
             ]
@@ -116,8 +197,8 @@
                 "@icon": "tv",
                 "@label": "Annict",
                 "@link": {
-                  "href": "https://annict.jp/@Mikazuki",
-                  "text": "@Mikazuki"
+                  "@href": "https://annict.jp/@Mikazuki",
+                  "@text": "@Mikazuki"
                 }
               },
               {
@@ -125,8 +206,8 @@
                 "@icon": "plug",
                 "@label": "Mastodon",
                 "@link": {
-                  "href": "https://mastodon.cloud/@mikazuki",
-                  "text": "@mikazuki"
+                  "@href": "https://mastodon.cloud/@mikazuki",
+                  "@text": "@mikazuki"
                 }
               }
             ]

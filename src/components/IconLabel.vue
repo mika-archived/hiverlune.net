@@ -9,12 +9,7 @@
     <template v-else>
       <i :class="icon1" aria-hidden="true"></i>
     </template>
-    <template v-if="hasLabel">
-      {{label}}
-    </template>
-    <template v-else>
-      <span v-html="raw" />
-    </template>
+    <h-label :params="{'@text': label, '@raw': raw}" />
   </p>
 </template>
 
@@ -41,7 +36,7 @@ export default class IconLabel extends Vue {
   // data
   public icon: string = '';
   public label: string = '';
-  public _raw: string = '';
+  public raw: string = '';
   public extra: string = '';
 
   constructor() {

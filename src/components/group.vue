@@ -39,7 +39,8 @@ export default class Group extends Vue {
   public title: string = '';
   public children: any[] = [];
 
-  public mounted(): void {
+  constructor() {
+    super();
     propertyMapping(this, this.params);
   }
 }
