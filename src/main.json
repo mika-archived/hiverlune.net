@@ -93,6 +93,11 @@
                   },
                   {
                     "component": "hyperlink",
+                    "@text": "楽園追放 -Expelled from Paradise-",
+                    "@href": "http://rakuen-tsuiho.com/"
+                  },
+                  {
+                    "component": "hyperlink",
                     "@text": "〈物語〉シリーズ",
                     "@href": "http://www.monogatari-series.com/"
                   }
