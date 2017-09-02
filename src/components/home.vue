@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <h1>hiverlune.net</h1>
-    <contents :children="children" />
+    <transition name="load-animation" enter-active-class="animated fadeIn">
+      <contents v-if="loaded" :children="children" />
+    </transition>
   </div>
 </template>
 
@@ -14,6 +16,9 @@ import Component from 'vue-class-component';
 export default class Home extends Vue {
   public children = [];
   protected axios: any;
+
+  // data
+  public loaded: boolean = false;
 
   constructor() {
     super();
@@ -33,6 +38,7 @@ export default class Home extends Vue {
     } else {
       this.children = require('../main.json');
     }
+    this.loaded = true;
   }
 }
 </script>
