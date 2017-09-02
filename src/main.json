@@ -59,7 +59,7 @@
         "component": "grid",
         "@base": "md",
         "@sm": 12,
-        "@md": 6,
+        "@md": 4,
         "children": [
           {
             "component": "contents",
@@ -128,6 +128,36 @@
                   {
                     "component": "h-label",
                     "@text": "アトリエ 「不思議」シリーズ"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "h-label",
+                "@text": "音楽"
+              },
+              {
+                "component": "list",
+                "children": [
+                  {
+                    "component": "h-label",
+                    "@text": "ClariS"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "LiSA"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "SawanoHiroyuki[nZk]"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "supercell"
                   }
                 ]
               }
