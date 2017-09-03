@@ -158,6 +158,10 @@
                   {
                     "component": "h-label",
                     "@text": "supercell"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "TrySail"
                   }
                 ]
               }
