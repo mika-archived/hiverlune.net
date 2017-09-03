@@ -4,7 +4,7 @@ const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const PurifyCssPlugin = require('purifycss-webpack');
+// const PurifyCssPlugin = require('purifycss-webpack');
 const webpackConfug = require('./webpack.base.js');
 
 webpackConfug.module.rules.push(
