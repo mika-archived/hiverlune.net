@@ -39,7 +39,7 @@ jobs:
       - deploy:
           name: Deployment task
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master"]; then
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
               yarn run build
               yarn run deploy
             fi
