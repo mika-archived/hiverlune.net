@@ -32,12 +32,7 @@ export default class Home extends Vue {
   }
 
   private async load() {
-    if (process.env.NODE_ENV === 'production') {
-      const response = await this.axios.get('https://raw.githubusercontent.com/mika-f/hiverlune.net/master/src/main.json');
-      this.children = response.data;
-    } else {
-      this.children = require('../main.json');
-    }
+    this.children = require('../main.json');
     this.loaded = true;
   }
 }
