@@ -34,7 +34,13 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn test
+      # - run: yarn test
 
-
+      - deploy:
+          name: Deployment task
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master"]; then
+              yarn run build
+              yarn run deploy
+            fi
 
