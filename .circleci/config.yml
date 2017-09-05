@@ -36,11 +36,13 @@ jobs:
       # run tests!
       # - run: yarn test
 
+      - run: yarn run build
+
       - deploy:
           name: Deployment task
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              yarn run build
+              ssh-keyscan -H hiverlune.net >> ~/.ssh/known_hosts
               yarn run deploy
             fi
 
