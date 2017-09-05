@@ -1,7 +1,14 @@
 <template>
-  <a :href="href" target="_blank">
-    {{text}}
-  </a>
+  <span>
+    <template v-if="isInternal">
+      {{text}}
+    </template>
+    <template v-else>
+      <a :href="href" target="_blank">
+        {{text}}
+      </a>
+    </template>
+  </span>
 </template>
 
 <script lang="ts">
@@ -17,6 +24,11 @@ export default class Link extends Vue {
   // data
   public href: string = '';
   public text: string = '';
+
+  // computed
+  public get isInternal(): boolean {
+    return this.href.startsWith('/') || this.href.startsWith('#');
+  }
 
   constructor() {
     super();
