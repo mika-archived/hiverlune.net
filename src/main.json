@@ -151,6 +151,10 @@
                     "component": "h-label",
                     "@text": "LiSA"
                   },
+									{
+										"component": "h-label",
+										"@text": "new generations"
+									},
                   {
                     "component": "h-label",
                     "@text": "SawanoHiroyuki[nZk]"
@@ -162,7 +166,11 @@
                   {
                     "component": "h-label",
                     "@text": "TrySail"
-                  }
+                  },
+									{
+										"component": "h-label",
+										"@text": "乙女ストーム！"
+									}
                 ]
               }
             ]
