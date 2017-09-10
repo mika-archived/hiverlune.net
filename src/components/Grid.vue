@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div :key="index" :class="col(index)" v-for="index in size">
-      <div :is="colComponent(index)" :params="colParams(index)" />
+      <div :is="colComponent(index)" :params="colParams(index)" v-bind="colParams(index)" />
     </div>
   </div>
 </template>

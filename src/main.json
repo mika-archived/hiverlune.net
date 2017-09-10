@@ -93,6 +93,11 @@
                   },
                   {
                     "component": "hyperlink",
+                    "@text": "ノーゲーム・ノーライフ",
+                    "@href": "http://ngnl.jp/"
+                  },
+                  {
+                    "component": "hyperlink",
                     "@text": "楽園追放 -Expelled from Paradise-",
                     "@href": "http://rakuen-tsuiho.com/"
                   },
@@ -172,6 +177,72 @@
                     "@text": "乙女ストーム！"
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "group",
+    "@title": "ゲーム",
+    "children": [
+      {
+        "component": "grid",
+        "@base": "lg",
+        "@xs": 12,
+        "@md": 6,
+        "@lg": 4,
+        "children": [
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "linked-icon-label",
+                "@icon": "gamepad",
+                "@label": "Switch",
+                "@link": {
+                  "@href": "#",
+                  "@text": "SW-8435-0998-9578"
+                }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "gamepad",
+                "@label": "ミリシタ",
+                "@link": {
+                  "@href": "#",
+                  "@text": "GV98BASC"
+                }
+              }
+            ]
+          },
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "linked-icon-label",
+                "@icon": "gamepad",
+                "@label": "マギアレコード",
+                "@link": {
+                  "@href": "#",
+                  "@text": "Txhn46Uc"
+                }
+              }
+            ]
+          },
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "linked-icon-label",
+                "@icon": "gamepad",
+                "@label": "デレステ",
+                "@link": {
+                  "@href": "#",
+                  "@text": "390366947"
+                }
               }
             ]
           }
