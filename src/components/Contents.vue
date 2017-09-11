@@ -2,7 +2,7 @@
   <div>
     <template v-if="children">
       <div :key="index" v-for="(w, index) in children">
-        <div :is="w.component" :params="w" :style="w.class" />
+        <div :is="w.component" :params="w" :class="w.class" />
       </div>
     </template>
     <template v-else>
