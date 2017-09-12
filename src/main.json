@@ -313,6 +313,15 @@
                   "@href": "http://ikaclo.jp/users/1516/",
                   "@text": "みか"
                 }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "twitch",
+                "@label": "Twitch",
+                "@link": {
+                  "@href": "https://www.twitch.tv/mikazuki_f",
+                  "@text": "mikazuki_f"
+                }
               }
             ]
           },
