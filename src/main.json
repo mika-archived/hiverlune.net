@@ -181,6 +181,41 @@
             ]
           }
         ]
+      },
+      {
+        "component": "grid",
+        "@base": "md",
+        "@sm": 12,
+        "@md": 6,
+        "children": [
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "h-label",
+                "@text": "キャラクター"
+              },
+              {
+                "component": "list",
+                "children": [
+                  {
+                    "component": "h-label",
+                    "@text": "ユイ (Angel Beats!)"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "双葉杏 (アイドルマスターシンデレラガールズ)"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "望月杏奈 (アイドルマスターミリオンライブ！)"
+                  }
+                ]
+              }
+            ]
+          },
+          {}
+        ]
       }
     ]
   },
