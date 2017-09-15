@@ -264,6 +264,15 @@
                   "@href": "#",
                   "@text": "Txhn46Uc"
                 }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "gamepad",
+                "@label": "アズールレーン",
+                "@link": {
+                  "@href": "#",
+                  "@text": "201341984"
+                }
               }
             ]
           },
