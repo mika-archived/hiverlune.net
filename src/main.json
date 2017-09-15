@@ -348,6 +348,15 @@
                   "@href": "http://ikaclo.jp/users/1516/",
                   "@text": "みか"
                 }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "twitch",
+                "@label": "Twitch",
+                "@link": {
+                  "@href": "https://www.twitch.tv/mikazuki_f",
+                  "@text": "mikazuki_f"
+                }
               }
             ]
           },
@@ -370,6 +379,15 @@
                 "@link": {
                   "@href": "https://mastodon.cloud/@mikazuki",
                   "@text": "@mikazuki"
+                }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "video-camera",
+                "@label": "Mixer",
+                "@link": {
+                  "@href": "https://mixer.com/mikazuki",
+                  "@text": "mikazuki"
                 }
               }
             ]
