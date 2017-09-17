@@ -174,7 +174,7 @@
                   },
                   {
                     "component": "h-label",
-                    "@text": "乙女ストーム！"
+                    "@text": "乙女ストーム!"
                   }
                 ]
               }
@@ -208,13 +208,41 @@
                   },
                   {
                     "component": "h-label",
-                    "@text": "望月杏奈 (アイドルマスターミリオンライブ！)"
+                    "@text": "望月杏奈 (アイドルマスターミリオンライブ!)"
                   }
                 ]
               }
             ]
           },
-          {}
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "h-label",
+                "@text": "食べ物"
+              },
+              {
+                "component": "list",
+                "children": [
+                  {
+                    "component": "hyperlink",
+                    "@text": "明星 一平ちゃん夜店の焼そば",
+                    "@href": "http://www.myojofoods.co.jp/products/product_detail.html?id=7094"
+                  },
+                  {
+                    "component": "hyperlink",
+                    "@text": "明星 一平ちゃん夜店の焼そば 塩だれ味",
+                    "@href": "http://www.myojofoods.co.jp/products/product_detail.html?id=8028"
+                  },
+                  {
+                    "component": "hyperlink",
+                    "@text": "伝統の味 寒天ゼリー",
+                    "@href": "http://kinjoseika.com/i/item0001-165"
+                  }
+                ]
+              }
+            ]
+          }
         ]
       }
     ]
