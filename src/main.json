@@ -44,6 +44,11 @@
                 "component": "icon-label",
                 "@icon": "envelope-o",
                 "@raw": "<code>'mika~kokoiroworks.com'.gsub('~', '@')</code>"
+              },
+              {
+                "component": "icon-label",
+                "@icon": "commenting-o",
+                "@label": "取扱注意荷物"
               }
             ]
           }
