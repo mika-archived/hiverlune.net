@@ -191,7 +191,7 @@
         "component": "grid",
         "@base": "md",
         "@sm": 12,
-        "@md": 6,
+        "@md": 4,
         "children": [
           {
             "component": "contents",
@@ -244,6 +244,29 @@
                     "@text": "伝統の味 寒天ゼリー",
                     "@href": "http://kinjoseika.com/i/item0001-165"
                   }
+                ]
+              }
+            ]
+          },
+          {
+            "component": "contents",
+            "children": [
+              {
+                "component": "h-label",
+                "@text": "本"
+              },
+              {
+                "component": "list",
+                "children": [
+                  {
+                    "component": "hyperlink",
+                    "@text": "キノの旅",
+                    "@href": "http://dengekibunko.jp/title/kino/"
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "ib -インスタントバレット-"
+                  },
                 ]
               }
             ]
