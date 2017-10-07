@@ -4,7 +4,7 @@
       {{text}}
     </template>
     <template v-else>
-      <a :href="href" target="_blank">
+      <a :href="href" :target="target">
         {{text}}
       </a>
     </template>
@@ -28,6 +28,13 @@ export default class Link extends Vue {
   // computed
   public get isInternal(): boolean {
     return this.href.startsWith('/') || this.href.startsWith('#');
+  }
+  
+  public get target(): string {
+    if (this.href.startsWith('https://') || this.href.startsWith('http://')) {
+      return '_blank';
+    }
+    return '_self';
   }
 
   constructor() {
