@@ -398,11 +398,11 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "@icon": "pencil",
-                "@label": "はてなブログ",
+                "@icon": "medium",
+                "@label": "Medium",
                 "@link": {
-                  "@href": "http://mikazuki.hatenablog.jp",
-                  "@text": "みかづきメモ"
+                  "@href": "https://medium.com/@Mikazuki/",
+                  "@text": "@Mikazuki"
                 }
               },
               {
