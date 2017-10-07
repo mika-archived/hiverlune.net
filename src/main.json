@@ -41,9 +41,13 @@
                 "@label": "Programming / Gender"
               },
               {
-                "component": "icon-label",
+                "component": "linked-icon-label",
                 "@icon": "envelope-o",
-                "@raw": "<code>'mika~kokoiroworks.com'.gsub('~', '@')</code>"
+                "@label": "",
+                "@link": {
+                  "@text": "Click!",
+                  "@href": "mailto:mika@kokoiroworks.com"
+                }
               },
               {
                 "component": "icon-label",
