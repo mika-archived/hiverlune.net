@@ -43,10 +43,19 @@
               {
                 "component": "linked-icon-label",
                 "@icon": "envelope-o",
-                "@label": "",
+                "@label": "Email",
                 "@link": {
                   "@text": "Click!",
                   "@href": "mailto:mika@kokoiroworks.com"
+                }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "envelope-o",
+                "@label": "Email (返信が必要ならこちら)",
+                "@link": {
+                  "@text": "Click!",
+                  "@href": "mailto:me@mochizuki.moe"
                 }
               },
               {
