@@ -305,15 +305,6 @@
               {
                 "component": "linked-icon-label",
                 "@icon": "gamepad",
-                "@label": "Switch",
-                "@link": {
-                  "@href": "#",
-                  "@text": "SW-8435-0998-9578"
-                }
-              },
-              {
-                "component": "linked-icon-label",
-                "@icon": "gamepad",
                 "@label": "ミリシタ",
                 "@link": {
                   "@href": "#",
@@ -394,15 +385,6 @@
                   "@href": "https://amakan.net/@mikazuki",
                   "@text": "@mikazuki"
                 }
-              },
-              {
-                "component": "linked-icon-label",
-                "@icon": "comments-o",
-                "@label": "Discord",
-                "@link": {
-                  "@href": "#",
-                  "@text": "mikazuki#4745"
-                }
               }
             ]
           },
@@ -416,15 +398,6 @@
                 "@link": {
                   "@href": "https://medium.com/@Mikazuki/",
                   "@text": "@Mikazuki"
-                }
-              },
-              {
-                "component": "linked-icon-label",
-                "@icon": "bolt",
-                "@label": "イカクロ",
-                "@link": {
-                  "@href": "http://ikaclo.jp/users/1516/",
-                  "@text": "みか"
                 }
               },
               {
@@ -448,15 +421,6 @@
                 "@link": {
                   "@href": "https://annict.jp/@Mikazuki",
                   "@text": "@Mikazuki"
-                }
-              },
-              {
-                "component": "linked-icon-label",
-                "@icon": "plug",
-                "@label": "Mastodon",
-                "@link": {
-                  "@href": "https://mastodon.cloud/@mikazuki",
-                  "@text": "@mikazuki"
                 }
               },
               {
