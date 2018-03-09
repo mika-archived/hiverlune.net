@@ -32,7 +32,7 @@
               {
                 "component": "icon-label",
                 "@icon": "home",
-                "@label": "Kobe-shi Chuo-ku, Hyogo"
+                "@label": "Shinagawa, Tokyo"
               },
               {
                 "component": "icon-label",
@@ -61,7 +61,7 @@
               {
                 "component": "icon-label",
                 "@icon": "commenting-o",
-                "@label": "ちょっと鬱気味な感じです。優しくしてね。"
+                "@label": "心がやばい。"
               }
             ]
           }
@@ -227,7 +227,10 @@
                   {
                     "component": "h-label",
                     "@text": "望月杏奈"
-                  }
+                  },
+                  {
+                    "component": "h-label",
+                    "@text": "猫宮ひなた"
                 ]
               }
             ]
@@ -310,6 +313,15 @@
                   "@href": "#",
                   "@text": "GV98BASC"
                 }
+              },
+              {
+                "component": "linked-icon-label",
+                "@icon": "gamepad",
+                "@label": "アズールレーン",
+                "@link": {
+                  "@href": "#",
+                  "@text": "201341984"
+                }
               }
             ]
           },
@@ -323,15 +335,6 @@
                 "@link": {
                   "@href": "#",
                   "@text": "Txhn46Uc"
-                }
-              },
-              {
-                "component": "linked-icon-label",
-                "@icon": "gamepad",
-                "@label": "アズールレーン",
-                "@link": {
-                  "@href": "#",
-                  "@text": "201341984"
                 }
               }
             ]
