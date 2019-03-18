@@ -2,15 +2,15 @@
   <div class="container">
     <h1>hiverlune.net</h1>
     <transition name="load-animation" enter-active-class="animated fadeIn">
-      <contents v-if="loaded" :children="children" />
+      <contents v-if="loaded" :children="children"/>
     </transition>
   </div>
 </template>
 
 <script lang="ts">
-import axios, { AxiosResponse } from 'axios';
-import Vue from 'vue';
-import Component from 'vue-class-component';
+import axios, { AxiosResponse } from "axios";
+import Vue from "vue";
+import Component from "vue-class-component";
 
 @Component
 export default class Home extends Vue {
@@ -32,7 +32,7 @@ export default class Home extends Vue {
   }
 
   private async load() {
-    this.children = require('../main.json');
+    this.children = require("../main.json");
     this.loaded = true;
   }
 }

@@ -1,19 +1,15 @@
 <template>
   <div class="row">
     <div :key="index" :class="col(index)" v-for="index in size">
-      <div :is="colComponent(index)" :params="colParams(index)" v-bind="colParams(index)" />
+      <div :is="colComponent(index)" :params="colParams(index)" v-bind="colParams(index)"/>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
-
 <script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-import { propertyMapping } from '../utils';
+import Vue from "vue";
+import Component from "vue-class-component";
+import { propertyMapping } from "../utils";
 
 @Component({
   props: {
@@ -25,7 +21,7 @@ export default class Grid extends Vue {
   public params: any;
 
   // data
-  public base: string = '';
+  public base: string = "";
   public children: any[] = [];
   public xs: number | number[] = 0;
   public sm: number | number[] = 0;
@@ -64,7 +60,7 @@ export default class Grid extends Vue {
     if (this.isValid(this.xl, index)) {
       clazz.push(`col-xl-${this.getValue(this.xl, index)}`);
     }
-    return clazz.join(' ');
+    return clazz.join(" ");
   }
 
   public colComponent(index: number): any {
@@ -80,7 +76,7 @@ export default class Grid extends Vue {
       return false;
     }
     if (Array.isArray(obj)) {
-      return obj.length > (index - 1);
+      return obj.length > index - 1;
     } else {
       return obj > 0;
     }

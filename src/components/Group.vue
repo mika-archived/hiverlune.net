@@ -1,13 +1,36 @@
 <template>
   <div class="bs-docs-section">
     <div class="page-header">
-      <h2>
-        {{title}}
-      </h2>
+      <h2>{{title}}</h2>
     </div>
-    <contents :children="children" />
+    <contents :children="children"/>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+import Component from "vue-class-component";
+import { propertyMapping } from "../utils";
+
+@Component({
+  props: {
+    params: {}
+  }
+})
+export default class Group extends Vue {
+  // props
+  public params: any;
+
+  // data
+  public title: string = "";
+  public children: any[] = [];
+
+  constructor() {
+    super();
+    propertyMapping(this, this.params);
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .bs-docs-section {
@@ -20,28 +43,3 @@
   border-bottom: 1px solid #eee;
 }
 </style>
-
-<script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-import { propertyMapping } from '../utils';
-
-@Component({
-  props: {
-    params: {}
-  }
-})
-export default class Group extends Vue {
-  // props
-  public params: any;
-
-  // data
-  public title: string = '';
-  public children: any[] = [];
-
-  constructor() {
-    super();
-    propertyMapping(this, this.params);
-  }
-}
-</script>

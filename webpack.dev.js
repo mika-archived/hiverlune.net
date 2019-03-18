@@ -1,39 +1,31 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpackConfug = require('./webpack.base.js');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpackConfig = require("./webpack.base.js");
 
-webpackConfug.module.rules.push(
+webpackConfig.module.rules.push(
   {
     test: /\.scss$/,
-    use: [
-      'style-loader',
-      'css-loader',
-      'sass-loader'
-    ]
+    use: ["style-loader", "css-loader", "sass-loader"]
   },
   {
     test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
-    loader: 'file-loader'
+    loader: "file-loader"
   }
 );
 
-webpackConfug.plugins = [
+webpackConfig.plugins.push(
   new HtmlWebpackPlugin({
     inject: true,
-    template: path.join(__dirname, 'src', 'index.html')
-  }),
-  new webpack.DefinePlugin({
-    'process.env.NODE_ENV': JSON.stringify('development')
-  }),
-]
+    template: path.join(__dirname, "src", "index.html")
+  })
+);
 
-webpackConfug.devServer = {
+webpackConfig.devServer = {
   port: 8080,
-  host: 'localhost',
+  host: "localhost",
   historyApiFallback: true,
-  contentBase: './src',
-  open: true
+  contentBase: "./src"
+  // open: true
 };
 
-module.exports = webpackConfug;
+module.exports = webpackConfig;

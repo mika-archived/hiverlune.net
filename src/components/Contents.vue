@@ -2,22 +2,22 @@
   <div>
     <template v-if="children">
       <div :key="index" v-for="(w, index) in children">
-        <div :is="w.component" :params="w" :class="w.class" />
+        <div :is="w.component" :params="w" :class="w.class"/>
       </div>
     </template>
     <template v-else>
       <div :key="index" v-for="(w, index) in params.children">
-        <div :is="w.component" :params="w" :class="w.class" />
+        <div :is="w.component" :params="w" :class="w.class"/>
       </div>
     </template>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
+import Vue from "vue";
+import Component from "vue-class-component";
 
-import { propertyMapping } from '../utils';
+import { propertyMapping } from "../utils";
 
 @Component({
   props: {
@@ -26,7 +26,7 @@ import { propertyMapping } from '../utils';
   }
 })
 export default class Contents extends Vue {
-  public children: {};
+  public children!: {};
   public params: any;
 }
 </script>

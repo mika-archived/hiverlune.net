@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="src" alt="">
+    <img :src="src" alt>
   </div>
 </template>
 
@@ -15,9 +15,9 @@ img {
 </style>
 
 <script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-import { propertyMapping } from '../utils';
+import Vue from "vue";
+import Component from "vue-class-component";
+import { propertyMapping } from "../utils";
 
 @Component({
   props: {
@@ -29,7 +29,7 @@ export default class RoundedImage extends Vue {
   public params: any;
 
   // data
-  public src: string = '';
+  public src: string = "";
 
   constructor() {
     super();

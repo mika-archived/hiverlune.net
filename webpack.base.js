@@ -1,19 +1,19 @@
-const path = require('path');
-
+const path = require("path");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
   entry: {
-    bundle: path.join(__dirname, 'src', 'main.ts')
+    bundle: path.join(__dirname, "src", "main.ts")
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'js/[name].[hash].js'
+    path: path.join(__dirname, "dist"),
+    filename: "js/[name].[hash].js"
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   resolve: {
-    extensions: ['.vue', '.ts', '.js', '.html'],
+    extensions: [".vue", ".ts", ".js", ".html"],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      vue$: "vue/dist/vue.esm.js"
     }
   },
   module: {
@@ -21,13 +21,13 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        enforce: 'pre',
-        loader: 'tslint-loader'
+        enforce: "pre",
+        loader: "tslint-loader"
       },
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        loader: 'ts-loader',
+        loader: "ts-loader",
         options: {
           appendTsSuffixTo: [/\.vue$/]
         }
@@ -35,8 +35,9 @@ module.exports = {
       {
         test: /\.vue$/,
         exclude: /node_modules/,
-        loader: 'vue-loader'
+        loader: "vue-loader"
       }
     ]
-  }
+  },
+  plugins: [new VueLoaderPlugin()]
 };

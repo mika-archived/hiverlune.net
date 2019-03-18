@@ -6,10 +6,7 @@
       {
         "component": "grid",
         "@base": "sm",
-        "@sm": [
-          4,
-          8
-        ],
+        "@sm": [4, 8],
         "children": [
           {
             "component": "contents",
@@ -26,23 +23,23 @@
             "children": [
               {
                 "component": "icon-label",
-                "@icon": "user",
+                "@icon": "fas fa-user",
                 "@label": "Mikazuki Fuyuno / みか"
               },
               {
                 "component": "icon-label",
-                "@icon": "home",
+                "@icon": "fas fa-home",
                 "@label": "Shinagawa, Tokyo"
               },
               {
                 "component": "icon-label",
-                "@icon": "ban",
+                "@icon": "fas fa-ban",
                 "@extra": "text-danger",
                 "@label": "Programming / Gender"
               },
               {
                 "component": "linked-icon-label",
-                "@icon": "envelope-o",
+                "@icon": "far fa-envelope",
                 "@label": "",
                 "@link": {
                   "@text": "メール",
@@ -51,7 +48,7 @@
               },
               {
                 "component": "linked-icon-label",
-                "@icon": "envelope-o",
+                "@icon": "far fa-envelope",
                 "@label": "",
                 "@link": {
                   "@text": "メール (返信が必要ならこちらから)",
@@ -60,7 +57,7 @@
               },
               {
                 "component": "icon-label",
-                "@icon": "commenting-o",
+                "@icon": "far fa-comment",
                 "@label": "心がやばい。"
               }
             ]
@@ -308,7 +305,7 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "@icon": "gamepad",
+                "@icon": "fas fa-gamepad",
                 "@label": "ミリシタ",
                 "@link": {
                   "@href": "#",
@@ -317,7 +314,7 @@
               },
               {
                 "component": "linked-icon-label",
-                "@icon": "gamepad",
+                "@icon": "fas fa-gamepad",
                 "@label": "アズールレーン",
                 "@link": {
                   "@href": "#",
@@ -331,7 +328,7 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "@icon": "gamepad",
+                "@icon": "fas fa-gamepad",
                 "@label": "マギアレコード",
                 "@link": {
                   "@href": "#",
@@ -345,7 +342,7 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "@icon": "gamepad",
+                "@icon": "fas fa-gamepad",
                 "@label": "デレステ",
                 "@link": {
                   "@href": "#",
@@ -374,7 +371,7 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "@icon": "twitter",
+                "@icon": "fab fa-twitter",
                 "@label": "Twitter",
                 "@link": {
                   "@href": "https://twitter.com/MikazukiFuyuno",
@@ -383,7 +380,7 @@
               },
               {
                 "component": "linked-icon-label",
-                "@icon": "book",
+                "@icon": "fas fa-book",
                 "@label": "amakan",
                 "@link": {
                   "@href": "https://amakan.net/@mikazuki",
@@ -397,7 +394,7 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "@icon": "medium",
+                "@icon": "fab fa-medium",
                 "@label": "Medium",
                 "@link": {
                   "@href": "https://medium.com/@Mikazuki/",
@@ -406,7 +403,7 @@
               },
               {
                 "component": "linked-icon-label",
-                "@icon": "twitch",
+                "@icon": "fab fa-twitch",
                 "@label": "Twitch",
                 "@link": {
                   "@href": "https://www.twitch.tv/mikazuki_f",
@@ -420,7 +417,7 @@
             "children": [
               {
                 "component": "linked-icon-label",
-                "@icon": "tv",
+                "@icon": "fas fa-tv",
                 "@label": "Annict",
                 "@link": {
                   "@href": "https://annict.jp/@Mikazuki",
@@ -429,7 +426,7 @@
               },
               {
                 "component": "linked-icon-label",
-                "@icon": "video-camera",
+                "@icon": "fas fa-video",
                 "@label": "Mixer",
                 "@link": {
                   "@href": "https://mixer.com/mikazuki",
