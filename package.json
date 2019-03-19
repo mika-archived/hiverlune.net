@@ -35,5 +35,8 @@
     "vue": "^2.6.9",
     "vue-class-component": "^7.0.1",
     "vue-router": "^3.0.2"
+  },
+  "resolutions": {
+    "sshpk": "^1.13.2"
   }
 }
